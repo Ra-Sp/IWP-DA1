@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Doctor Form</title>
+    <style>
+        header {
+            background-color: #ca6f14;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: black;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px black;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 89%;
+            padding: 8px;
+            margin-bottom: 17px;
+            border-radius: 3px;
+        }
+
+        .invalid {
+            box-shadow: 0 0 4px red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Veterinary Doctor Form
+        </h1>
+    </header>
+
+    <form id="doctorForm">
+        <label for="doctorName">Veterinary Doctor Name:</label>
+        <input type="text" id="doctorName" name="doctorName" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("doctorForm").addEventListener("submit", function (event) {
+            var doctorNameInput = document.getElementById("doctorName");
+            var doctorName = doctorNameInput.value;
+
+            var nameRegex = /^[a-zA-Z]+$/;
+
+            if (!nameRegex.test(doctorName)) {
+                doctorNameInput.style.boxShadow = "0 0 4px red";
+                event.preventDefault();
+                alert("Name can only contain letters.");
+            } else {
+                doctorNameInput.style.boxShadow = "none";
+                alert("Name accepted!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

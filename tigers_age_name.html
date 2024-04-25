@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Names by Age</title>
+    <style>
+        * {
+            text-align: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ca6f14;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: black;
+        }
+
+        div {
+            margin-top: 25px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tigers -- Age : Name Mapping</h1>
+    </header>
+
+    <div>
+        <label for="age">Enter Tiger Age [Between 1-10 years]: </label><br>
+        <input type="number" id="age" min="0" oninput="displayTigers(this.value)">
+        <ul id="tigerList"></ul>
+    </div>
+
+    <script>
+
+        var tigerData = [
+            { name: "Simba", age: 3 },
+            { name: "Limba", age: 4 },
+            { name: "Raja", age: 5 },
+            { name: "Roja", age: 5 },
+            { name: "Shere Khan", age: 8 },
+            { name: "Heera Khan", age: 8 },
+            { name: "Bagheera", age: 4 },
+            { name: "Heera", age: 4 },
+            { name: "Rajah", age: 6 },
+            { name: "Rani", age: 9 },
+            { name: "Sultan", age: 9 }
+        ];
+
+        function displayTigers(age) {
+            var tigerList = document.getElementById("tigerList");
+            tigerList.innerHTML = "";
+
+            var filteredTigers = tigerData.filter(function (tiger) {
+                return tiger.age === parseInt(age);
+            });
+
+            filteredTigers.forEach(function (tiger) {
+                var listItem = document.createElement("li");
+                listItem.textContent = tiger.name;
+                tigerList.appendChild(listItem);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
