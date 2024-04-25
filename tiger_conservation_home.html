@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiger Conservation</title>
+  <link rel="stylesheet" href="home_styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tiger Conservation Organization</h1>
+    <nav>
+      <ul>
+        <li><a href="#about" id="internal_link">About Tigers</a></li>
+        <li><a href="#reserves" id="internal_link">Indian Tiger Reserves</a></li>
+        <li><a href="#statistics" id="internal_link">Tiger Statistics</a></li>
+        <li><a href="#donate" id="internal_link">Donate</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Tiger_conservation" id="external_link">More Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Tigers</h2>
+      <p>
+        Tigers are majestic creatures, known for their striking appearance, strength, and stealth.
+        As the largest members of the cat family, they command respect in their natural habitats across Asia.
+        With their distinctive orange coats adorned with black stripes, they blend seamlessly into the dense
+        forests and grasslands where they reside.
+      </p>
+
+      <p>
+        Indian Tigers, also known as Bengal Tigers, are perhaps the most iconic subspecies.
+        They are found primarily in India, although their range extends into neighboring countries like Nepal,
+        Bhutan, and Bangladesh. Renowned for their grace and power, these tigers once roamed throughout the Indian
+        subcontinent in large numbers. However, due to habitat loss, poaching, and human-wildlife conflict, their
+        population has dwindled significantly in recent decades.
+      </p>
+
+      <p>
+        Despite conservation efforts, Indian Tigers remain endangered, with only around 2,500 individuals estimated to
+        be
+        left in the wild. National parks and reserves like Ranthambore, Bandhavgarh, and Corbett serve as crucial
+        sanctuaries for these magnificent creatures, providing protected spaces where they can roam freely and breed.
+        Conservationists and government agencies work tirelessly to preserve these habitats and combat the threats
+        facing
+        Indian Tigers, aiming to ensure their survival for future generations to admire and cherish.
+      </p>
+
+      <h3>Tigers already extinct</h3>
+      <ul>
+        <li>Bali Tiger (Panthera tigris balica): Native to the Indonesian island of Bali, last seen in the 1930s.</li>
+        <li>Caspian Tiger (Panthera tigris virgata): Also known as the Persian tiger, once inhabited the forests of
+          Central Asia and Iran, declared extinct in the mid-20th century.</li>
+        <li>Javan Tiger (Panthera tigris sondaica): Indigenous to the Indonesian island of Java, last sighted in the
+          1970s.</li>
+      </ul>
+
+
+      <h3>Efforts by the Indian Government for Conservation of Tigers:</h3>
+      <ol>
+        <li>Establishment of Project Tiger in 1973 as a conservation initiative to protect the Bengal tiger.</li>
+        <li>Creation of Tiger Reserves across the country to provide protected habitats for tigers.</li>
+        <li>Implementation of the Wildlife Protection Act in 1972, providing legal protection to tigers and their
+          habitats.</li>
+        <li>Development of the National Tiger Conservation Authority (NTCA) in 2005 to oversee tiger conservation
+          efforts.</li>
+        <li>Launch of the Integrated Tiger Habitat Conservation Programme to address habitat conservation and
+          management.</li>
+        <li>Initiation of the Tiger Census, conducted every four years to monitor tiger populations and their habitats.
+        </li>
+        <li>Implementation of the Tiger Conservation Plan in each Tiger Reserve, outlining strategies for tiger
+          conservation.</li>
+        <li>Establishment of Special Tiger Protection Forces to enhance anti-poaching efforts in Tiger Reserves.</li>
+        <li>Collaboration with international organizations and governments for transboundary tiger conservation
+          initiatives.</li>
+        <li>Investment in research and monitoring programs to gather data on tiger populations, habitats, and threats.
+        </li>
+        <li>Recognition of the tiger as the national animal of India to symbolize its significance and promote
+          conservation efforts.</li>
+      </ol>
+
+      <img src="types_of_tigers.jpg" alt="Tiger Types" usemap="#tigerTypes" id="#typesOfTigers">
+      <map name="tigerTypes">
+        <area target="_blank" alt="South China Tiger" title="South China Tiger"
+          href="https://en.wikipedia.org/wiki/South_China_tiger" coords="10,37,256,162" shape="rect">
+        <area target="_blank" alt="Malayan Tiger" title="Malayan Tiger"
+          href="https://en.wikipedia.org/wiki/Malayan_tiger" coords="336,17,558,176" shape="rect">
+        <area target="_blank" alt="Sumatran Tiger" title="Sumatran Tiger"
+          href="https://en.wikipedia.org/wiki/Sumatran_tiger" coords="10,190,231,328" shape="rect">
+        <area target="_blank" alt="Siberian Tiger" title="Siberian Tiger"
+          href="https://en.wikipedia.org/wiki/Siberian_tiger" coords="249,180,526,341" shape="rect">
+        <area target="_blank" alt="Bengal Tiger" title="Bengal Tiger" href="https://en.wikipedia.org/wiki/Bengal_tiger"
+          coords="14,342,266,485" shape="rect">
+        <area target="_blank" alt="IndoChinese Tiger" title="IndoChinese Tiger"
+          href="https://en.wikipedia.org/wiki/Indochinese_tiger" coords="294,349,569,487" shape="rect">
+      </map>
+
+      <div id="tigerRoaring">
+        <audio controls>
+          <source src="tiger_roaring_audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <video width="320" height="240" controls>
+          <source src="tiger_roaring_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </section>
+
+    <section id="reserves">
+      <h2>Indian Tiger Reserves</h2>
+      <button id="showReserves">Click to View Tiger Reserves in India</button>
+      <table id="reservesTable">
+        <thead>
+          <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Established</th>
+            <th rowspan="2">State</th>
+            <th rowspan="2">Tiger population (2023)</th>
+            <th colspan="2">Area (km<sup>2</sup>)</th>
+          </tr>
+          <tr>
+            <th>Core area</th>
+            <th>Buffer area</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nagarjunsagar-Srisailam</td>
+            <td>1982–83</td>
+            <td>Andhra Pradesh</td>
+            <td>58</td>
+            <td>2,595.72</td>
+            <td>700.59</td>
+          </tr>
+          <tr>
+            <td>Namdapha</td>
+            <td>1982–83</td>
+            <td rowspan="3">Arunachal Pradesh</td>
+            <td>1</td>
+            <td>1807.82</td>
+            <td>245.00</td>
+          </tr>
+          <tr>
+            <td>Pakke</td>
+            <td>1999–2000</td>
+            <!-- <td>Arunachal Pradesh</td> -->
+            <td>6</td>
+            <td>683.45</td>
+            <td>515.00</td>
+          </tr>
+          <tr>
+            <td>Kamlang</td>
+            <td>2016</td>
+            <td>0</td>
+            <td>771.00</td>
+            <td>112.00</td>
+          </tr>
+          <tr>
+            <td>Manas</td>
+            <td>1973–74</td>
+            <td rowspan="4">Assam</td>
+            <td>58</td>
+            <td>526.22</td>
+            <td>2,310.88</td>
+          </tr>
+          <tr>
+            <td>Nameri</td>
+            <td>1999–2000</td>
+            <td>3</td>
+            <td>320.00</td>
+            <td>144.00</td>
+          </tr>
+          <tr>
+            <td>Kaziranga</td>
+            <td>2008–09</td>
+            <!-- <td>Assam</td> -->
+            <td>104</td>
+            <td>625.58</td>
+            <td>548.00</td>
+          </tr>
+          <tr>
+            <td>Orang</td>
+            <td>2016</td>
+            <!-- <td>Assam</td> -->
+            <td>16</td>
+            <td>79.28</td>
+            <td>413.18</td>
+          </tr>
+          <tr>
+            <td>Valmiki</td>
+            <td>1989–90</td>
+            <td>Bihar</td>
+            <td>54</td>
+            <td>598.45</td>
+            <td>300.93</td>
+          </tr>
+          <tr>
+            <td>Indravati</td>
+            <td>1982–83</td>
+            <td rowspan="3">Chhattisgarh</td>
+            <td>1</td>
+            <td>1,258.37</td>
+            <td>1,540.70</td>
+          </tr>
+          <tr>
+            <td>Sitanadi</td>
+            <td>2008–09</td>
+            <!-- <td>Chhattisgarh</td> -->
+            <td>1</td>
+            <td>851.09</td>
+            <td>991.45</td>
+          </tr>
+          <tr>
+            <td>Achanakmar</td>
+            <td>2008–09</td>
+            <!-- <td>Chhattisgarh</td> -->
+            <td>5</td>
+            <td>626.19</td>
+            <td>287.82</td>
+          </tr>
+          <tr>
+            <td>Palamau</td>
+            <td>1973–74</td>
+            <td>Jharkhand</td>
+            <td>1</td>
+            <td>414.08</td>
+            <td>715.85</td>
+          </tr>
+          <tr>
+            <td>Bandipur</td>
+            <td>1973–74</td>
+            <td rowspan="5">Karnataka</td>
+            <td>150</td>
+            <td>868.63</td>
+            <td>584.06</td>
+          </tr>
+          <tr>
+            <td>Bhadra</td>
+            <td>1998–99</td>
+            <!-- <td>Karnataka</td> -->
+            <td>28</td>
+            <td>492.46</td>
+            <td>571.83</td>
+          </tr>
+          <tr>
+            <td>Kali</td>
+            <td>2008–09</td>
+            <!-- <td>Karnataka</td> -->
+            <td>17</td>
+            <td>814.88</td>
+            <td>282.63</td>
+          </tr>
+          <tr>
+            <td>Nagarhole</td>
+            <td>2008–09</td>
+            <!-- <td>Karnataka</td> -->
+            <td>141</td>
+            <td>643.35</td>
+            <td>562.41</td>
+          </tr>
+          <tr>
+            <td>Biligiri Ranganatha Temple</td>
+            <td>2010–11</td>
+            <!-- <td>Karnataka</td> -->
+            <td>37</td>
+            <td>359.10</td>
+            <td>215.72</td>
+          </tr>
+          <tr>
+            <td>Periyar</td>
+            <td>1978–79</td>
+            <td rowspan="2">Kerala</td>
+            <td>30</td>
+            <td>881</td>
+            <td>44.00</td>
+          </tr>
+          <tr>
+            <td>Parambikulam</td>
+            <td>2008–09</td>
+            <!-- <td>Kerala</td> -->
+            <td>31</td>
+            <td>390.89</td>
+            <td>252.77</td>
+          </tr>
+          <tr>
+            <td>Kanha</td>
+            <td>1973–74</td>
+            <td rowspan="7">Madhya Pradesh</td>
+            <td>105</td>
+            <td>917.43</td>
+            <td>1,134.36</td>
+          </tr>
+          <tr>
+            <td>Pench</td>
+            <td>1992–93</td>
+            <!-- <td>Madhya Pradesh</td> -->
+            <td>77</td>
+            <td>411.33</td>
+            <td>768.30</td>
+          </tr>
+          <tr>
+            <td>Bandhavgarh</td>
+            <td>1993–94</td>
+            <!-- <td>Madhya Pradesh</td> -->
+            <td>135</td>
+            <td>716.9</td>
+            <td>820.03</td>
+          </tr>
+          <tr>
+            <td>Panna</td>
+            <td>1994–95</td>
+            <!-- <td>Madhya Pradesh</td> -->
+            <td>55</td>
+            <td>576.13</td>
+            <td>1,021.97</td>
+          </tr>
+          <tr>
+            <td>Satpura</td>
+            <td>1999–2000</td>
+            <!-- <td>Madhya Pradesh</td> -->
+            <td>50</td>
+            <td>1,339.26</td>
+            <td>794.04</td>
+          </tr>
+          <tr>
+            <td>Sanjay Dhubri</td>
+            <td>2008–09</td>
+            <!-- <td>Madhya Pradesh</td> -->
+            <td>16</td>
+            <td>812.57</td>
+            <td>861.93</td>
+          </tr>
+          <tr>
+            <td>Veerangana Durgavati</td>
+            <td>2023</td>
+            <!-- <td>Madhya Pradesh</td> -->
+            <td>NA</td>
+            <td>1,414.00</td>
+            <td>925.12</td>
+          </tr>
+          <tr>
+            <td>Melghat</td>
+            <td>1973–74</td>
+            <td rowspan="6">Maharashtra</td>
+            <td>57</td>
+            <td>1,500.49</td>
+            <td>1,268.03</td>
+          </tr>
+          <tr>
+            <td>Tadoba-Andhari</td>
+            <td>1993–94</td>
+            <!-- <td>Maharashtra</td> -->
+            <td>97</td>
+            <td>625.82</td>
+            <td>1,101.77</td>
+          </tr>
+          <tr>
+            <td>Pench-MH</td>
+            <td>1998–99</td>
+            <!-- <td>Maharashtra</td> -->
+            <td>48</td>
+            <td>257.26</td>
+            <td>483.96</td>
+          </tr>
+          <tr>
+            <td>Sahyadri</td>
+            <td>2009–10</td>
+            <!-- <td>Maharashtra</td> -->
+            <td>0</td>
+            <td>612.00</td>
+            <td>565.45</td>
+          </tr>
+          <tr>
+            <td>Nawegaon</td>
+            <td>2013–14</td>
+            <!-- <td>Maharashtra</td> -->
+            <td>11</td>
+            <td>653.67</td>
+            <td>1,241.27</td>
+          </tr>
+          <tr>
+            <td>Bor</td>
+            <td>2014</td>
+            <!-- <td>Maharashtra</td> -->
+            <td>9</td>
+            <td>138.12</td>
+            <td>678.15</td>
+          </tr>
+          <tr>
+            <td>Dampa</td>
+            <td>1994–95</td>
+            <td>Mizoram</td>
+            <td>0</td>
+            <td>500.00</td>
+            <td>488.00</td>
+          </tr>
+          <tr>
+            <td>Similipal</td>
+            <td>1973–74</td>
+            <td rowspan="2">Odisha</td>
+            <td>16</td>
+            <td>1,194.75</td>
+            <td>1,555.25</td>
+          </tr>
+          <tr>
+            <td>Satkosia</td>
+            <td>2008–09</td>
+            <!-- <td>Odisha</td> -->
+            <td>0</td>
+            <td>523.61</td>
+            <td>440.26</td>
+          </tr>
+          <tr>
+            <td>Ranthambore</td>
+            <td>1973–74</td>
+            <td rowspan="5">Rajasthan</td>
+            <td>57</td>
+            <td>1,333.36</td>
+            <td>297.92</td>
+          </tr>
+          <tr>
+            <td>Sariska</td>
+            <td>1978–79</td>
+            <!-- <td>Rajasthan</td> -->
+            <td>19</td>
+            <td>881.11</td>
+            <td>332.23</td>
+          </tr>
+          <tr>
+            <td>Mukandra Hills</td>
+            <td>2013–14</td>
+            <!-- <td>Rajasthan</td> -->
+            <td>1</td>
+            <td>717.17</td>
+            <td>342.82</td>
+          </tr>
+          <tr>
+            <td>Ramgarh Vishdhari</td>
+            <td>2022</td>
+            <!-- <td>Rajasthan</td> -->
+            <td>1</td>
+            <td>481.90</td>
+            <td>1,019.98</td>
+          </tr>
+          <tr>
+            <td>Dholpur-Karauli</td>
+            <td>2023</td>
+            <!-- <td>Rajasthan</td> -->
+            <td>NA</td>
+            <td>599.64</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Kalakad-Mundanthurai</td>
+            <td>1988–89</td>
+            <td rowspan="5">Tamil Nadu</td>
+            <td>5</td>
+            <td>895.00</td>
+            <td>706.54</td>
+          </tr>
+          <tr>
+            <td>Anamalai</td>
+            <td>2008–09</td>
+            <!-- <td>Tamil Nadu</td> -->
+            <td>16</td>
+            <td>958.59</td>
+            <td>521.28</td>
+          </tr>
+          <tr>
+            <td>Mudumalai</td>
+            <td>2007</td>
+            <!-- <td>Tamil Nadu</td> -->
+            <td>114</td>
+            <td>321.00</td>
+            <td>367.59</td>
+          </tr>
+          <tr>
+            <td>Sathyamangalam</td>
+            <td>2013–14</td>
+            <!-- <td>Tamil Nadu</td> -->
+            <td>85</td>
+            <td>793.49</td>
+            <td>614.91</td>
+          </tr>
+          <tr>
+            <td>Srivilliputhur–Megamalai</td>
+            <td>2021</td>
+            <!-- <td>Tamil Nadu</td> -->
+            <td>12</td>
+            <td>641.86</td>
+            <td>374.70</td>
+          </tr>
+          <tr>
+            <td>Kawal</td>
+            <td>2012–13</td>
+            <td rowspan="2">Telangana</td>
+            <td>0</td>
+            <td>892.23</td>
+            <td>1,123.21</td>
+          </tr>
+          <tr>
+            <td>Amrabad</td>
+            <td>2014</td>
+            <!-- <td>Telangana</td> -->
+            <td>12</td>
+            <td>2,611.4</td>
+            <td>445.02</td>
+          </tr>
+          <tr>
+            <td>Dudhwa</td>
+            <td>1987–88</td>
+            <td rowspan="3">Uttar Pradesh</td>
+            <td>135</td>
+            <td>1,093.79</td>
+            <td>1,107.98</td>
+          </tr>
+          <tr>
+            <td>Pilibhit</td>
+            <td>2014</td>
+            <!-- <td>Uttar Pradesh</td> -->
+            <td>63</td>
+            <td>602.79</td>
+            <td>127.45</td>
+          </tr>
+          <tr>
+            <td>Ranipur</td>
+            <td>2022</td>
+            <!-- <td>Uttar Pradesh</td> -->
+            <td>NA</td>
+            <td>230.31</td>
+            <td>299.05</td>
+          </tr>
+          <tr>
+            <td>Corbett</td>
+            <td>1973–74</td>
+            <td rowspan="2">Uttarakhand</td>
+            <td>260</td>
+            <td>1,318.54</td>
+            <td>466.32</td>
+          </tr>
+          <tr>
+            <td>Rajaji</td>
+            <td>2015</td>
+            <!-- <td>Uttarakhand</td> -->
+            <td>54</td>
+            <td>819.54</td>
+            <td>255.63</td>
+          </tr>
+          <tr>
+            <td>Sunderbans</td>
+            <td>1973–74</td>
+            <td rowspan="2">West Bengal</td>
+            <td>100</td>
+            <td>1,699.62</td>
+            <td>885.27</td>
+          </tr>
+          <tr>
+            <td>Buxa</td>
+            <td>1982–83</td>
+            <!-- <td>West Bengal</td> -->
+            <td>1</td>
+            <td>390.58</td>
+            <td>367.32</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="1"><strong>Reference</strong></td>
+            <td colspan="5"><a href="https://en.wikipedia.org/wiki/Tiger_reserves_of_India#Tiger_reserves"
+                id="external_link">Wikipedia</a></td>
+          </tr>
+        </tfoot>
+      </table>
+
+    </section>
+
+    <section id="statistics">
+      <h2>Tiger Statistics - India</h2>
+      <div id="tigerStats">
+        <p><span style="font-size: xx-large; font-weight: 400;">Tigers</span> are a conservation dependent species.
+          Major threats to tigers are poaching that is driven by an illegal international demand for tiger parts and
+          products, depletion of tiger prey, and habitat loss due to the ever increasing demand for forested lands. To
+          gauge the success of conservation efforts as well as to have a finger on the pulse of tiger populations and
+          their ecosystems, the National Tiger Conservation Authority in collaboration with the State Forest
+          Departments, the Wildlife Institute of India and conservation partners conducts a National assessment for the
+          “Status of Tigers, Co-predators, Prey and their Habitat” once inevery four years. The methodology used for
+          this assessment was approved by the Tiger Task Force in 2005. The first assessment based on this scientific
+          methodology was done in 2006 and subsequently in 2010, 2014 and 2018.</p>
+        <p>In 2006, the tiger population was estimated at 1,411 (1,165 to 1,657) which was much lower than the earlier
+          official estimates. This brought about major changes in tiger conservation policy, legislation, and
+          management. Special stress was laid on village relocation from core/critical tiger habitats and enhancing
+          protection by creating the Special Tiger Protection Force. Subsequently, these concerted actions resulted in
+          an upward trend in the tiger population as documented by the 2010 population estimates of 1,706.</p>
+        <p>However, the 2010 assessment also showed a decline in tiger occupied area. This decline in tiger occupancy
+          was recorded in areas outside of tiger reserves, indicating loss of habitat quality and extent – a crucial
+          element essential for maintaining genetic connectivity between individual tiger populations. To address this
+          vital conservation concern, the NTCA in collaboration with the WII delineated the minimal tiger habitat
+          corridors connecting tiger reserves for implementing landscape scale tiger conservation. Now all tiger
+          reserves manage their tiger populations based on a tiger conservation plan (TCP), which addresses specific
+          prescriptions for core, buffer, and corridor habitats.</p>
+        <p>The 2014 assessment, further bore testimony to the inputs provided by Project Tiger and based on the double
+          sampling approach, showed a 30% increase over the previous cycle. India now has 70 % of the global tiger
+          population at 2226. 1540 distinct camera trapped photographs of tigers have been obtained and the rest based
+          on sound statistically robust, spatially explicit capture recapture (SECR) models.</p>
+        <p>The fourth cycle of National tiger status assessment of 2018-19 is the most accurate survey conducted. The
+          survey covered 381,400 km 2 of forested habitats in 20 tiger occupied states of India. A foot survey of
+          522,996 km was done for carnivore signs and prey abundance estimation. In these forests, 317,958 habitat plots
+          were sampled for vegetation, human impacts and prey dung.</p>
+        <p>Camera traps were deployed at 26,838 locations. These cameras resulted in 34,858,623 photographs of wildlife
+          of which 76,651 were of tigers and 51,777 were of leopards. The total area sampled by camera traps was 121,337
+          km 2 . The total effort invested in the survey was 593,882 man-days. We believe that this is the world’s
+          largest effort invested in any wildlife survey till date, on all of the above criteria.</p>
+        <p>A total of 2,461 individual tigers (>1 year of age) were photo-captured. The overall tiger population in
+          India was estimated at 2,967 (SE range 2,603 to 3,346). Out of this, 83% were actually camera trapped
+          individual tigers and 87% were accounted for by camera-trap based capture-mark-recapture and remaining 13%
+          estimated through covariate based models. Tigers were observed to be increasing at a rate of 6% per annum in
+          India when consistently sampled areas were compared from 2006 to 2018. Tiger occupancy was found to be stable
+          at 88,985 km 2 the country scale since 2014 (88,558 km 2 ). Though there were losses and gains at individual
+          landscapes and state scales.</p>
+      </div>
+    </section>
+
+    <section id="donate">
+      <h2>Donate for Tiger Conservation!</h2>
+
+      <h2>Tiger Age Category</h2>
+      <label><input type="checkbox" name="age" value="Young" onchange="handleCheckboxChange(this)"> Young</label><br>
+      <label><input type="checkbox" name="age" value="Adult" onchange="handleCheckboxChange(this)"> Adult</label><br>
+      <label><input type="checkbox" name="age" value="Senior" onchange="handleCheckboxChange(this)"> Senior</label><br>
+      <button type="button" onclick="resetAgeSelection()">Reset</button>
+
+      <h2>Donor Form</h2>
+      <form onsubmit="return validateForm()">
+        <table id="formTable">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" onblur="validateName()" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" id="age" min="1" max="120" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile:</label></td>
+            <td><input type="text" id="mobile" pattern="[0-9]{10}" required><br></td>
+          </tr>
+        </table>
+        <button type="submit">Donate</button>
+      </form>
+
+    </section>
+
+    <img src="tiger.png" id="movingTiger">
+
+  </main>
+
+  <footer>
+    <p>Webpage by &copy; Radhika Arvind Sardeshpande</p>
+    <p>I &hearts; Tigers!</p>
+  </footer>
+
+  <script src="home_script.js"></script>
+</body>
+
+</html>

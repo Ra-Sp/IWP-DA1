@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infected Tigers</title>
+
+
+    <style>
+        * {
+            text-align: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: #ca6f14;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: black;
+        }
+
+        table {
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <header>
+        <h2>Infected Tigers</h2>
+    </header>
+
+    <p>Enter the count of infected tigers:</p>
+    <input type="number" id="tigerCount" min="1">
+    <button onclick="displayTigers()">Display</button>
+
+    <table id="tigerTable" style="display:none;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>RFID</th>
+            </tr>
+        </thead>
+        <tbody id="tigerBody">
+        </tbody>
+    </table>
+
+    <script>
+        function displayTigers() {
+            var count = document.getElementById("tigerCount").value;
+            var table = document.getElementById("tigerTable");
+            var tbody = document.getElementById("tigerBody");
+
+            tbody.innerHTML = "";
+
+            if (count > 0) {
+                table.style.display = "table";
+
+                // Assign names (A, B, C...) and RFID numbers (1, 2, 3...)
+                for (var i = 0; i < count; i++) {
+                    var name = String.fromCharCode(65 + i); // ASCII code for 'A' is 65
+                    var rfid = i + 1;
+
+                    var row = document.createElement("tr");
+                    var nameCell = document.createElement("td");
+                    var rfidCell = document.createElement("td");
+
+                    nameCell.textContent = name;
+                    rfidCell.textContent = rfid;
+
+                    row.appendChild(nameCell);
+                    row.appendChild(rfidCell);
+                    tbody.appendChild(row);
+                }
+            } else {
+                table.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

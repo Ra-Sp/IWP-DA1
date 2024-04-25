@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Names</title>
+    <style>
+        header {
+            background-color: #ca6f14;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: black;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        #tigerNames {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Tiger Names
+        </h1>
+    </header>
+
+    <h2>Select Language:</h2>
+    <ul>
+        <li><a href="#" onclick="displayTigerNames('tamil')">Tamil</a></li>
+        <li><a href="#" onclick="displayTigerNames('hindi')">Hindi</a></li>
+    </ul>
+
+    <div id="tigerNames"></div>
+
+    <script>
+        function displayTigerNames(language) {
+            var tigerNamesDiv = document.getElementById("tigerNames");
+            var tigerNames = "";
+
+            if (language === 'tamil') {
+                tigerNames = "<h3>Tamil Names of Tigers:</h3><ul><li>புலி</li><li>பன்சு</li><li>வாலத் தோண்டை</li></ul>";
+            } else if (language === 'hindi') {
+                tigerNames = "<h3>Hindi Names of Tigers:</h3><ul><li>बाघ</li><li>बंकशू</li><li>वनराज</li></ul>";
+            } else {
+                tigerNames = "<p>No language selected.</p>";
+            }
+
+            tigerNamesDiv.innerHTML = tigerNames;
+        }
+    </script>
+
+</body>
+
+</html>
